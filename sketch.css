@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    background-image: url(./background.jpeg);
+    caret-color: transparent;
+}
+
+.container{
+    background-color: rgb(213, 49, 49);
+    height: 74vmin;
+    width: 73vmin;
+    min-width: 550px;
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: flex-start;
+    margin-top: 8vmin;
+    border-left: 12px solid rgb(174, 37, 37);
+    border-bottom: 12px solid rgb(146, 33, 33);
+    border-top: 12px solid  rgb(247, 51, 51);
+    border-right: 12px solid rgb(234, 45, 45) ;
+
+}
+.header h1 {
+    color: rgb(255, 221, 0);
+    font-family: 'brush script mt';
+    font-size: 5vmin;
+    margin: 1vmin 0px 1vmin 0px;
+    font-weight: 200;
+}
+
+.screen {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 54vmin;
+    width: 57vmin;
+    min-height: 400px;
+    min-width: 400px;
+    border-right: 12px solid rgb(174, 37, 37);
+    border-top: 12px solid rgb(146, 33, 33);
+    border-bottom: 12px solid  rgb(247, 51, 51);
+    border-left: 12px solid rgb(234, 45, 45) ;
+    cursor: pointer;
+}
+
+.column{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+
+.item {
+    background-color: rgb(255, 255, 255);
+    flex: 1 1 2%;
+    height: 1vmin;
+    outline: 1.2px solid lightgray;
+    padding: 0;
+    margin: 0;
+}
+
+.hovered {
+    background-color: black;
+    
+}
+
+.colored {
+    background-color: var(--main-bg-color);
+    
+}
+
+.base{
+    display: flex;
+    min-width: 525px;
+    align-content: center;
+    justify-content: center;
+    margin-top: 1.5vmin;
+}
+
+#controls { 
+    display: flex;
+    width: 51vmin;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 275px;
+}
+
+#slideContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+#slideContainer p {
+    color: white;
+    font-size: 1.8vmin;
+    margin-top: .5vmin;
+    font-family: 'american typewriter';
+
+}
+
+.slideValue {
+    font-size: 1.8vmin;
+    color: white;
+    font-family: 'american typewriter';
+}
+
+.slider{
+    width: 9vmin;
+    min-width: 60px;
+    margin-top: 1.2vmin;
+    background-color: white;
+    cursor: pointer;
+}
+
+#selection{
+    display: flex;  
+    color: rgb(255, 221, 0);
+    font-family:'american typewriter';
+    width: 12vmin;
+    min-width: 60px;
+    margin-left: 1vmin;
+    margin-top: 2.8vmin;
+    font-size: 1.6vmin;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5vmin;
+    width: 22vmin;
+    min-width: 100px;
+    margin-top: 1vmin;
+}
+
+.buttons button{
+    width: fit-content;
+    min-width: 25px;
+    height: fit-content;
+    padding: .4vmin .6vmin;
+    font-size: 1vmin;
+    font-family: 'american typewriter';
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: 1px solid rgb(157, 22, 22);
+    color: #fff;
+    background-color: rgb(213, 49, 49);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 .5vmin rgb(94, 27, 27);
+}
+
+.button:hover {background-color: rgb(114, 26, 26)}
+
+.buttons button:active {
+background-color: rgb(114, 26, 26);
+box-shadow: 0 .1vmin #393939;
+transform: translateY(2px);
+}
+
+.knob{
+    background-color: whitesmoke;
+    border-radius: 100px;
+    width: 7vmin;
+    height: 7vmin;
+    border: .3vmin dashed lightgray;
+}
+
+#one {margin-right: 1.1vmin;}
+#two {margin-left: 1.1vmin;}
+  
