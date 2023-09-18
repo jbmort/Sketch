@@ -4,8 +4,7 @@ range.innerHTML = slider.value;
 let screen = document.getElementsByClassName("screen")[0];
 let selection = document.getElementById('selection');
 setScreen();
-let randomColor
-
+let randomColor;
 
 slider.addEventListener("input", function () {
     clearScreen(); 
@@ -59,22 +58,20 @@ function setSelection(selector){
 
 function erase(event) {
     if (event.target.classList.contains('item')) {
+        event.target.style.removeProperty('background-color');
         event.target.classList.remove('hovered');
-        event.target.classList.remove('colored');
         setSelection(1)}}
                         
 function colorize(event){            
     randomColor = "#"+((1<<24)*Math.random()|0).toString(16);
-    document.documentElement.style.setProperty('--main-bg-color', randomColor);
-    if (event.target.classList.contains('item')) {
+    event.target.style.backgroundColor = randomColor;
+        if (event.target.classList.contains('item')) {
         event.target.classList.remove('hovered');
-        event.target.classList.add('colored');
-        setSelection(3)};
-    }
+        setSelection(3)};}
         
 function draw(event){
     if (event.target.classList.contains('item')) {
-        event.target.classList.remove('colored');
+        event.target.style.removeProperty('background-color')
         event.target.classList.add('hovered');        
         setSelection(2)}}
         

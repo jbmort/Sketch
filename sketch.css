@@ -76,11 +76,6 @@ body {
     
 }
 
-.colored {
-    background-color: var(--main-bg-color);
-    
-}
-
 .base{
     display: flex;
     min-width: 525px;
